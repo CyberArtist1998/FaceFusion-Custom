@@ -1,0 +1,142 @@
+{
+    "version": "1",
+    "date_created": "2026-08-08T11:01:42.358122+03:30",
+    "date_updated": "2026-08-08T11:01:57.154553+03:30",
+    "steps": [
+        {
+            "args": {
+                "source_paths": [
+                    "D:\\MyWorld-Sync\\051-GraphicDesign\\002-MertydomPosters\\SourcePictures\\\u067e\u0647\u067e\u0627\u062f - \u0627\u0644\u06a9\u062a\u0631\u0648\u0646\u06cc\u06a9 \u0648 \u0645\u06a9\u0627\u0646\u06cc\u06a9 - \u0646\u0627\u062e\u062f\u0627\u0633\u0648\u0645 \u0627\u0641\u0634\u06cc\u0646 \u0641\u0648\u0644\u0627\u062f\u06cc\\sweep-03\\Source_face.jpg"
+                ],
+                "target_path": "D:\\MyWorld-Sync\\051-GraphicDesign\\002-MertydomPosters\\TargetPictures\\Real\\Gemini_Generated_Image_2f841c2f841c2f84.png",
+                "output_path": "D:\\MyWorld-Sync\\051-GraphicDesign\\002-MertydomPosters\\SourcePictures\\\u067e\u0647\u067e\u0627\u062f - \u0627\u0644\u06a9\u062a\u0631\u0648\u0646\u06cc\u06a9 \u0648 \u0645\u06a9\u0627\u0646\u06cc\u06a9 - \u0646\u0627\u062e\u062f\u0627\u0633\u0648\u0645 \u0627\u0641\u0634\u06cc\u0646 \u0641\u0648\u0644\u0627\u062f\u06cc\\sweep-03\\final.png",
+                "face_detector_model": "yolo_face",
+                "face_detector_size": "640x640",
+                "face_detector_margin": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "face_detector_angles": [
+                    0
+                ],
+                "face_detector_score": 0.5,
+                "face_landmarker_model": "2dfan4",
+                "face_landmarker_score": 0.5,
+                "face_selector_mode": "one",
+                "face_selector_order": "large-small",
+                "face_selector_age_start": null,
+                "face_selector_age_end": null,
+                "face_selector_gender": null,
+                "face_selector_race": null,
+                "reference_face_position": 0,
+                "reference_face_distance": 0.3,
+                "reference_frame_number": 0,
+                "face_occluder_model": "xseg_1",
+                "face_parser_model": "bisenet_resnet_34",
+                "face_mask_types": [
+                    "box"
+                ],
+                "face_mask_areas": [
+                    "upper-face",
+                    "lower-face",
+                    "mouth"
+                ],
+                "face_mask_regions": [
+                    "skin",
+                    "left-eyebrow",
+                    "right-eyebrow",
+                    "left-eye",
+                    "right-eye",
+                    "glasses",
+                    "nose",
+                    "mouth",
+                    "upper-lip",
+                    "lower-lip"
+                ],
+                "face_mask_blur": 0.15,
+                "face_mask_padding": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "voice_extractor_model": "kim_vocal_2",
+                "trim_frame_start": null,
+                "trim_frame_end": null,
+                "temp_frame_format": "png",
+                "keep_temp": null,
+                "output_image_quality": 100,
+                "output_image_scale": 1.0,
+                "output_audio_encoder": "flac",
+                "output_audio_quality": 80,
+                "output_audio_volume": 100,
+                "output_video_encoder": "libx264",
+                "output_video_preset": "veryfast",
+                "output_video_quality": 80,
+                "output_video_scale": 1.0,
+                "output_video_fps": null,
+                "processors": [
+                    "face_swapper"
+                ],
+                "age_modifier_model": "fran",
+                "age_modifier_direction": 0,
+                "background_remover_model": "modnet",
+                "background_remover_fill_color": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "background_remover_despill_color": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "deep_swapper_model": "iperov/elon_musk_224",
+                "deep_swapper_morph": 100,
+                "expression_restorer_model": "live_portrait",
+                "expression_restorer_factor": 80,
+                "expression_restorer_areas": [
+                    "upper-face",
+                    "lower-face"
+                ],
+                "face_debugger_items": [
+                    "face-landmark-5/68",
+                    "face-mask"
+                ],
+                "face_editor_model": "live_portrait",
+                "face_editor_eyebrow_direction": 0.0,
+                "face_editor_eye_gaze_horizontal": 0.0,
+                "face_editor_eye_gaze_vertical": 0.0,
+                "face_editor_eye_open_ratio": 0.0,
+                "face_editor_lip_open_ratio": 0.0,
+                "face_editor_mouth_grim": 0.0,
+                "face_editor_mouth_pout": 0.0,
+                "face_editor_mouth_purse": 0.0,
+                "face_editor_mouth_smile": 0.0,
+                "face_editor_mouth_position_horizontal": 0.0,
+                "face_editor_mouth_position_vertical": 0.0,
+                "face_editor_head_pitch": 0.0,
+                "face_editor_head_yaw": 0.0,
+                "face_editor_head_roll": 0.0,
+                "face_enhancer_model": "gfpgan_1.4",
+                "face_enhancer_blend": 80,
+                "face_enhancer_weight": 0.5,
+                "face_swapper_model": "inswapper_128",
+                "face_swapper_pixel_boost": "512x512",
+                "face_swapper_weight": 0.65,
+                "frame_colorizer_model": "ddcolor",
+                "frame_colorizer_size": "256x256",
+                "frame_colorizer_blend": 100,
+                "frame_enhancer_model": "span_kendata_x4",
+                "frame_enhancer_blend": 80,
+                "lip_syncer_model": "wav2lip_gan_96",
+                "lip_syncer_weight": 0.5
+            },
+            "status": "completed"
+        }
+    ]
+}

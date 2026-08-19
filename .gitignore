@@ -1,0 +1,153 @@
+.claude
+.idea
+.vscode
+node_modules
+
+
+# #############################################################################
+# ADDED 2026-08-08 (v2) from MyIgnoreFilesForGitAndMega.txt
+# Everything above this line is the repo's original .gitignore, unmodified.
+# .gitignore only affects UNTRACKED files -- already-committed .png/.pdf/.mp4
+# stay tracked until `git rm --cached <path>`.
+# #############################################################################
+
+# -----------------------------------------------------------------------------
+# 1. Video files
+# -----------------------------------------------------------------------------
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.webm
+*.wmv
+*.flv
+*.m4v
+*.mpg
+*.mpeg
+*.3gp
+*.mts
+*.m2ts
+*.vob
+*.ogv
+*.rm
+*.asf
+# *.ts is deliberately NOT ignored: in this tree it is TypeScript source,
+# not an MPEG transport stream.
+
+# -----------------------------------------------------------------------------
+# 2. PDF / PowerPoint / Word documents
+# -----------------------------------------------------------------------------
+*.pdf
+*.doc
+*.docx
+*.docm
+*.dot
+*.dotx
+*.rtf
+*.odt
+*.ppt
+*.pptx
+*.pptm
+*.pps
+*.ppsx
+*.pot
+*.potx
+*.odp
+*.xls
+*.xlsx
+*.xlsm
+*.ods
+
+# -----------------------------------------------------------------------------
+# 3. Images / pictures
+# -----------------------------------------------------------------------------
+*.png
+*.jpg
+*.jpeg
+*.jpe
+*.gif
+*.bmp
+*.webp
+*.tif
+*.tiff
+*.heic
+*.heif
+*.avif
+*.ico
+*.tga
+*.exr
+*.hdr
+*.dds
+# *.svg is deliberately NOT ignored: it is vector source (icons, logos) that
+# repos normally need. Add `*.svg` here if you want it gone too.
+
+# -----------------------------------------------------------------------------
+# 4. Python virtual environments and regenerable Python output
+# -----------------------------------------------------------------------------
+.venv/
+venv/
+venv_*/
+env/
+ENV/
+.conda/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# -----------------------------------------------------------------------------
+# 5. Log files and log directories
+# -----------------------------------------------------------------------------
+*.log
+logs/
+log/
+
+# -----------------------------------------------------------------------------
+# 6. Files larger than 100 MB
+# -----------------------------------------------------------------------------
+# NOT POSSIBLE IN .gitignore. The gitignore format has no size rule -- it
+# matches on paths only. Size enforcement is done by the pre-commit hook
+# `check-large-files` (run install-large-file-hook.sh once per repo). It
+# aborts any commit that stages a file over 100 MB, which is also GitHub's
+# hard per-file limit.
+
+# -----------------------------------------------------------------------------
+# 7. Design / 3D source and backup files
+# -----------------------------------------------------------------------------
+*.psd
+*.psb
+*.tif
+*.tiff
+*.blend1
+
+# -----------------------------------------------------------------------------
+# node_modules (npm download, rebuilt by `npm install`)
+# -----------------------------------------------------------------------------
+node_modules/
+
+# -----------------------------------------------------------------------------
+# KEPT BEYOND YOUR LIST -- credentials.
+# Not in your instructions, but these repos push to GitHub and already contain
+# .env files. Delete this block if you want it gone.
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx

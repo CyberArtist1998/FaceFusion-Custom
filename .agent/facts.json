@@ -1,0 +1,50 @@
+{
+  "root": "D:\\MyWorld-Sync\\011-AI\\FaceFusion",
+  "interpreters": [
+    {
+      "path": "venv_311/Scripts/python.exe",
+      "version": "3.11.9",
+      "status": "VERIFIED"
+    }
+  ],
+  "system_python": {
+    "path": "C:\\Python314\\python.exe",
+    "version": "3.14.6",
+    "status": "VERIFIED"
+  },
+  "commands": [
+    {
+      "role": "test",
+      "command": "venv_311/Scripts/python.exe -m pytest",
+      "evidence": "tests/ directory",
+      "module": "pytest",
+      "status": "FAILED",
+      "detail": "tool not installed in this interpreter"
+    },
+    {
+      "role": "typecheck",
+      "command": "venv_311/Scripts/python.exe -m mypy .",
+      "evidence": "mypy.ini",
+      "module": "mypy",
+      "status": "FAILED",
+      "detail": "tool not installed in this interpreter"
+    },
+    {
+      "role": "lint",
+      "command": "venv_311/Scripts/python.exe -m flake8",
+      "evidence": ".flake8",
+      "module": "flake8",
+      "status": "FAILED",
+      "detail": "tool not installed in this interpreter"
+    },
+    {
+      "role": "lint",
+      "command": "npm run lint",
+      "evidence": "package.json scripts.lint -> eslint .",
+      "module": "",
+      "status": "FAILED",
+      "detail": "tool not installed in this interpreter"
+    }
+  ],
+  "package_manager": "npm"
+}
